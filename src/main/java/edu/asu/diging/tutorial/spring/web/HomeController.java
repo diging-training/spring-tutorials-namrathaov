@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import edu.asu.diging.tutorial.spring.service.IMoodService;
 
+/*
+ * Author: Namratha
+ * Handles request URLs to respective requests.
+*/
 @Controller
 public class HomeController {
 

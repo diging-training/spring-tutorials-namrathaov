@@ -1,4 +1,4 @@
-<h2>Hello World!</h2>
+<h2>Welcome to Mood detector!</h2>
  
 I am feeling: ${ mood.feeling }. 
 <% String url = request.getContextPath()+"/feels";%>

@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 
 import edu.asu.diging.tutorial.spring.domain.Mood;
 
+/*
+ * @author: Namratha
+ * Service to detect mood and reason for the mood.
+*/
+
 @Service
 public class MoodService implements IMoodService {
 	
@@ -19,7 +24,7 @@ public class MoodService implements IMoodService {
 	 */
 	@Override
 	public Mood getCurrentMood() {
-	        return new Mood(moodNow);
+	        return new Mood(this.moodNow);
 	 }
 	 
 	 /* (non-Javadoc)
@@ -29,6 +34,6 @@ public class MoodService implements IMoodService {
 	@PostConstruct
 	 public void init() {
 		 rand=new Random();
-		 moodNow=moodList[rand.nextInt(moodList.length)];
+		 this.moodNow=moodList[rand.nextInt(moodList.length)];
 	 }
 }

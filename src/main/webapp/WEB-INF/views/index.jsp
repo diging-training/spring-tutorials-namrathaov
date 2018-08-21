@@ -3,9 +3,9 @@
  
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>Welcome to Mood Detector!</h2>
  
-I am feeling: ${ mood.feeling }.
+I am feeling: ${ mood.feeling }.<br/>
 <% String url = request.getContextPath()+"/feels";%>
 <br/>
 <a href=<%=url%>>Click here to know why!</a>

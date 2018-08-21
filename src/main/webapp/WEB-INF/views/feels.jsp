@@ -2,7 +2,7 @@
 <%@ page isELIgnored="false" %>
  
 <html>
-<body><h2>So you want to know why...</h2>
+<body><h2>So you want to know why...</h2><br/>
 I am feeling ${ feels.feeling } because ${ feels.reason }
 <p>
 <a href="/MoodDetector">Maybe my mood has changed?</a>

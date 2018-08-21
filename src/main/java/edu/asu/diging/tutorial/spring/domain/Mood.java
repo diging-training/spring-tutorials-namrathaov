@@ -1,11 +1,16 @@
 package edu.asu.diging.tutorial.spring.domain;
 
+/*
+ * @author: Namratha
+ * Mood bean represents feeling and reason for mood.
+*/
+
 public class Mood {
 	private String feeling;
 	private String reason; 
     public Mood(String mood) {
         feeling = mood;
-        reason=getCurrentFeel(feeling);
+        reason=findReason();
     }
  
     public String getFeeling() {
@@ -18,7 +23,7 @@ public class Mood {
     public String getReason() {
     	return reason;
     }
-    public String getCurrentFeel(String feeling) {
+    public String findReason() {
     	String reason="";
     	switch(feeling) {
     	case "happy":
